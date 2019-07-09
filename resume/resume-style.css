@@ -21,6 +21,10 @@
     color: #172529;
 }
 
+#current-page {
+    color: #172529;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -70,6 +74,7 @@ svg {
     display: grid;
     height: 100%;
     width: 80%;
+    max-width: 900px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; 
 }
@@ -118,7 +123,7 @@ nav ul li{
     padding-bottom: 0rem;
     background-color: transparent;
     text-decoration: none;
-    margin-bottom: 10%;
+    margin-bottom: 0.75rem;
     margin-right: auto;
     margin-left: auto;
 }

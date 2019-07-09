@@ -7,6 +7,20 @@
     color: #172529;
 }
 
+* a {
+    text-decoration: none;
+    font-style: bold;
+    color: #758488;
+}
+
+* a:hover {
+    transition-duration: 0.20s;
+    transform: scale(1.15) translateY(-2px);
+    text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
+    text-decoration: none;
+    color: #172529;
+}
+
 #current-page {
     color: #172529;
 }
@@ -64,16 +78,6 @@ svg {
     grid-template-rows: auto auto auto; 
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-decoration: none;
-    
-}
-
 .portrait-image {
     height: 200px;
     width: 190px;
@@ -82,6 +86,16 @@ nav {
     margin-right: auto;
     margin-left: auto;
     border: #5b9691 solid 2px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    
 }
 
 nav ul {
@@ -132,7 +146,7 @@ body nav ul a li {
     color: #758488;
 }
 
-.about-me {
+.contact-me {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -141,10 +155,10 @@ body nav ul a li {
     padding: 2%;
    }
 
-.about-header {
+.contact-header {
     border-bottom: #5b9691 solid 3px;
 }
-.about-me .about {
+.contact-me .contact {
     text-align: center;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -156,34 +170,59 @@ body nav ul a li {
     text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
 }
 
-.paragraph-container {
+.form-container {
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    background: #043c423a;
-    padding: 2rem 4rem 1rem 4rem;
-}
-
-.paragraph-container p {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.25rem;
     text-align: center;
-    line-height: 1.75;
-    font-weight: 500
 }
 
-.paragraph-container p:first-letter {
-    font-size: 2rem;
-    font-weight: 550;
-    letter-spacing: .15rem;
-    color: #5b9691;
-    text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem 2rem 5rem;
+    text-align: center;
+    
 }
 
-.paragraph-container p::first-line {
-    line-height: 1;
+.form-container form label {
+    margin-bottom: .25rem;
 }
 
+.form-container form input {
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container form input:placeholder-shown {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#subject {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem .15rem .25rem .15rem;
+}
+
+#submit-button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+
+/* Footer Icons CSS Here */
 .footer-icons {
     text-align: center;
     font-size: 2rem;
@@ -206,7 +245,7 @@ body nav ul a li {
     color: #172529;
 }
 
-.about-bottom-bar {
+.resume-bottom-bar {
     height: auto;
     width: 100%;
     background: #a6d0d4;

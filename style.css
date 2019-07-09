@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+#current-page {
+    color: #172529;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -56,12 +60,12 @@ nav ul li{
     padding-bottom: 0rem;
     background-color: transparent;
     text-decoration: none;
-    margin-bottom: 10%;
+    margin-bottom: 0.75rem;
 }
 
-nav ul li:first-child{
+/* nav ul li:first-child{
     margin-right: 10%;
-}
+} */
 
 
 body nav ul a li:hover {
