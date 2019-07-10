@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    width: 95%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid_container {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.nasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(NASA.jpg);
+    background-size: cover;
+    width: auto;
+    height:600px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: 'Neuton', serif;
+    color: White;
+    font-size: 8em;
+    font-style: bold;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92); 
+    box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92);
+}
+
+.lower_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #E6E6E6;
+    padding: 15px;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92); 
+    box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92);
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 1.5em;
+    font-family: Helvetica, sans-serif
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+#name {
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+}
+
+#message {
+    height:75px;
+    width: auto;
+    font-size:1rem;
+}
+
+#button {
+    background-color: #4B4B4B;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 8em;
+    height: 3em;
+    font-style: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        
+        .nasa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(NASA.jpg);
+            background-size: cover;
+            width: 325px;
+            height:200px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            font-family: 'Neuton', serif;
+            color: White;
+            font-size: 5em;
+            font-style: bold;
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: black;
+            border-radius: 0px;
+            -webkit-box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92); 
+            box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .lower_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #E6E6E6;
+            padding: 15px;
+            border-radius: 0px;
+            -webkit-box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92); 
+            box-shadow: 1px 6px 14px -3px rgba(69,72,81,0.92);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .social_media {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            margin-bottom: 0.5em;
+            font-family: Helvetica, sans-serif
+        }
+        
+        ul {
+            list-style: none;
+            margin-bottom: 1em;
+        }
+        
+        li {
+            margin-bottom: 0.5em;
+        }
+        
+        #name {
+            height: auto;
+            width: auto;
+            font-size: 1rem;
+        }
+        
+        #message {
+            height:75px;
+            width: auto;
+            font-size:1rem;
+        }
+        
+        #button {
+            background-color: #4B4B4B;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 8em;
+            height: 3em;
+            font-style: bold;
+            }
+
+    }

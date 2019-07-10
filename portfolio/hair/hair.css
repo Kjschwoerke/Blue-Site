@@ -1,0 +1,664 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDEDED;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 1110px;
+    height: 100vh;
+    background-color: #EDEDED;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 345px 3fr;
+    background: #4C8F96;
+    width:100%;
+    height: 140px;
+}
+
+.zizurz {
+    grid-column: 1/2;
+    background: #1B2130;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+nav ul {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 85px;
+}
+
+nav ul li {
+    margin-left: 1em;
+    list-style: none;
+    background: #1B2130;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+}
+
+.great-hairstyle {
+    display:grid;
+    align-items: center;
+    background: white;
+    height: 324px;
+    width: 95%;
+    border: solid 2px #5FB3BD;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+    grid-column:339.433px 1fr;
+    grid-row: 1fr;
+}
+
+.great-hairstyle img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 5px;
+    width: 339.433;
+    height: 100%;
+}
+
+.great-hairstyle p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+    line-height: 50px;
+    color:#1b2130;
+    font-weight: normal;
+    font-family: 'Changa One', cursive;
+}
+
+/* Middle information bar with links*/
+
+.middle-info {
+    width: 95%;
+    height: auto;
+    background: transparent;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-info ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.middle-info ul li {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px #5FB3BD;
+    border-radius: 3px;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle-info ul li:first-child {
+    margin-left: 0;
+}
+
+.middle-info ul li:last-child {
+    margin-right: 0;
+}
+
+.middle-info ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.middle-info ul li p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: #464646;
+}
+
+.middle-info ul li b {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0 5px;
+    text-transform: capitalize;
+}
+
+/* Below this comment line is the CSS for links and content for the lower 3 divs above the footer. */
+
+.main-container-div {
+    height: 5010px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hair-i-just-met-you {
+    background: #FFFFFF;
+    position: relative;
+    top: 250px;
+    border: solid 4px #5FB3BD;
+    border-radius: 4px;
+    margin-right: 55px;
+    
+}
+
+.featured {
+    background: #20263F;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    height: auto;
+    letter-spacing: 0.1em;
+}
+
+.hair-i-just-met-you img {
+    margin-left: 20px;
+}
+
+.hair-i-just-met-you h3 {
+    position: relative;
+    left: 150px;
+    bottom: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.hair-i-just-met-you p {
+    position: relative;
+    bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color: #464646;
+}
+
+.right-div-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+}
+.hairstyle {
+    background: #20263F;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+    height: auto;
+    letter-spacing: 0.1em;
+}
+
+.top-right-div {
+    background-color: #519194;
+    border: solid 4px #5FB3BD;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.top-right-div p {
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.top-right-div a {
+    text-align: right;
+    position: relative;
+    left: 400px;
+}
+
+.bottom-right-div {
+    display: grid;
+    grid-column: auto 1fr;
+    grid-row: 1fr;
+    flex-direction: row;
+    background-color: #519194;
+    border: solid 4px #5FB3BD;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bottom-right-div p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.bottom-right-div img {
+    position: relative;
+    z-index: 3;
+    height: 150%;
+    bottom: 35.5%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    top: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #519194;
+    border: solid 4px #5FB3BD;
+}
+
+
+
+/* media query for smaller devices:_________________*/
+
+@media only screen and (max-width: 1110px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #EDEDED;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        background: #4C8F96;
+        width:100%;
+        height: 10%;
+        text-align: center;
+    }
+    
+    .zizurz {
+        background: #1B2130;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 65px;
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 150px;
+        
+}
+    
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        background: #1B2130;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom:5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .great-hairstyle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: white;
+        height: 324px;
+        width: 95%;
+        border: solid 2px #5FB3BD;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        border-radius: 5px;
+        position: relative;
+        top: 100px;
+    }
+    
+    .great-hairstyle img {
+        display: none;
+        border-radius: 5px;
+        width: 339.433px;
+        height: 100%;
+    }
+    
+    .great-hairstyle p {
+        text-align: center;
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 50px;
+        color:#1b2130;
+        font-weight: normal;
+        font-family: 'Changa One', cursive;
+        
+        
+    }
+    
+    /* Middle information bar with links*/
+    
+    .middle-info {
+        width: 95%;
+        height: auto;
+        background: transparent;
+        position: relative;
+        top: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .middle-info ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        padding: auto;
+        list-style: none;
+    }
+    
+    .middle-info ul li {
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 200px;
+        border: solid 5px #5FB3BD;
+        border-radius: 3px;
+        padding:0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .middle-info ul li:first-child {
+        margin-left: auto;
+    }
+    
+    .middle-info ul li:last-child {
+        margin-right: auto;
+    }
+    
+    .middle-info ul li img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
+    .middle-info ul li p {
+        font-size: 12px;
+        line-height: 24px;
+        margin: 0;
+        padding: 0;
+        color: #464646;
+    }
+    
+    .middle-info ul li b {
+        display: block;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        padding: 10px 0 5px;
+        text-transform: capitalize;
+    }
+    
+    /* Below this comment line is the CSS for links and content for the lower 3 divs above the footer. */
+    
+    .main-container-div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 90px;
+    }
+    
+    .hair-i-just-met-you {
+        background: #FFFFFF;
+        position: relative;
+        top: 250px;
+        border: solid 4px #5FB3BD;
+        border-radius: 4px;
+        margin-right: 55px;
+        width: 100%;
+        
+    }
+    
+    .featured {
+        background: #20263F;
+        color: #FFFFFF;
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 200px;
+        height: auto;
+        position: relative;
+        bottom: 15px;
+        left: 20px;
+        height: auto;
+        letter-spacing: 0.1em;
+    }
+    
+    .hair-i-just-met-you img {
+        margin-left: 20px;
+    }
+    
+    .hair-i-just-met-you h3 {
+        position: relative;
+        left: 0px;
+        bottom: 0;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    
+    .hair-i-just-met-you p {
+        position: relative;
+        bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; 
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 24px;
+        color: #464646;
+    }
+    
+    .right-div-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 300px;
+        width: 100%;
+    }
+    .hairstyle {
+        background: #20263F;
+        color: #FFFFFF;
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 200px;
+        height: auto;
+        position: relative;
+        bottom: 25px;
+        left: 20px;
+        height: auto;
+        letter-spacing: 0.1em;
+    }
+    
+    .top-right-div {
+        background-color: #519194;
+        border: solid 4px #5FB3BD;
+        margin-bottom: 50px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    
+    .top-right-div p {
+        position: relative;
+        bottom: 10px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    
+    .top-right-div a {
+        text-align: right;
+        position: relative;
+        left: 0;
+    }
+    
+    .bottom-right-div {
+        display: flex;
+        flex-direction: row;
+        background-color: #519194;
+        border: solid 4px #5FB3BD;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    
+    .bottom-right-div p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+    
+    .bottom-right-div img {
+        display: none;
+        position: relative;
+        z-index: 3;
+        height: 150%;
+        bottom: 50px;
+    }
+    
+    .footer {
+        width: 95%;
+        position: relative;
+        bottom: 0;
+        top: 400px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;
+        background-color: #519194;
+        border: solid 4px #5FB3BD;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+

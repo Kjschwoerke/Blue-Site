@@ -1,0 +1,246 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* border: blue dotted 1px; */
+    padding-top: 1em;
+    background:#6D6D6D;
+
+}
+
+li {
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 11pt;
+    word-break: break-word;
+   
+}
+
+div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11pt;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background:transparent;
+    /* border: blue dotted 1px; */
+    width: 90%;
+    height: auto;
+    margin-bottom: .5em;
+}
+
+.picture_holder {
+    display: flex;
+    flex-direction: column;
+    /* border: blue dotted 1px; */
+    width: 10em;
+    height: 10em;
+    margin-top: .5em;
+}
+
+/* This line of code is the actual picture */
+
+.picture_holder > img {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    }
+/* 
+This is the CSS for the container holding just the Name and the Personal Statement. */
+
+.Name_Statement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    align-content: center;
+    background: #D3D3D3;
+    border-radius: 10px;
+    width: 97%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 1rem;
+    border-bottom: orange solid 2px;
+    width: 100%;
+}
+
+.statement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 0;
+}
+
+.statement > p {
+    font-size: 16px;
+}
+
+/* This is the CSS for the "Bodywrapper and associated content". This includes the contact info and the first body section */
+
+.bodywrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    background: transparent;
+   }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    background: #D3D3D3;
+    border-bottom: #6D6D6D solid 10px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    width: 160px;
+    max-width: 160px;
+    height: auto;
+    text-align: center;
+
+}
+
+.contact > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: blue dotted 1px; */
+    width: auto;
+    height: auto;
+    list-style: none;
+    padding:.5rem;
+    margin:0;
+    }
+
+.contact > ul > li {
+    margin-bottom: 1.5em;
+}
+
+.contact > ul > li:nth-child(1){ 
+    margin: 0px;
+}
+
+    .body1 {
+
+        width: 80%;
+        background:#D3D3D3;
+        border-top-left-radius: 10px; 
+        border-top-right-radius:10px;
+        margin-left: 1rem; 
+        padding: 1rem;
+    }
+
+    .body1 > ul {
+        margin: 0;
+        padding:0.5rem;
+    }
+
+    .body1 > ul > li {
+        text-align: left;
+        margin: 0;
+    }
+
+    .work-exp li {
+        text-align: left;
+        margin-bottom: .5rem;
+        line-height: 1.5;
+        font-size: 1rem;
+        list-style: circle;
+    }
+    
+
+   
+    
+
+    /* This is the CSS for the second body section including"bodywrapper2" and associated content (eg skills section. */
+
+    .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background: #D3D3D3;
+    /* border: blue dotted 1px; */
+    width: 160px;
+    height: auto;
+    text-align: center;
+    border-bottom: #6D6D6D solid 10px;
+    }
+
+    .skills > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills > ul > li {
+        margin-bottom: 1.5em;
+    }
+        
+    .body2 {
+        width: 80%;
+        background: #D3D3D3;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    /* This is the CSS for the 3rd body section including the languages and body 3 sections --> */
+
+    .languages {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content:center;
+        background: #D3D3D3;
+        /* border: blue dotted 1px; */
+        width: 160px;
+        height: auto;
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        }
+
+        .languages > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .languages> ul > li {
+            margin-bottom: 1.5em;
+        }
+        
+        .body3 {
+            width: 80%;
+            background: lightgrey;
+            margin-left: 10px;
+            padding: 10px;
+            border-bottom-left-radius: 10px; 
+            border-bottom-right-radius: 10px;
+        }
+/* media queries go below here: */
+
+        /* @media screen and (max-width: 800px) {
+            .contact>ul>li {
+                font-size: 11px;
+                font-style: bold;
+            }
+        } */

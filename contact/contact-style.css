@@ -221,6 +221,16 @@ form {
     margin-top: 2rem;
 }
 
+.submit {
+    margin-top:1.5em;
+    background-color:#043c423a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+}
+
 
 /* Footer Icons CSS Here */
 .footer-icons {
