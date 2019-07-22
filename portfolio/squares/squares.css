@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 2% auto 2% auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.5831435079726651) 0%, rgba(148,187,233,0.32801822323462415) 100%);
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background: grey;
+    margin: 1em 0 1em 0;
+}
+
+.square:nth-child(1) {
+    background: rgba(102, 102, 199, 0.479);
+}
+
+.square:nth-child(2) {
+    background: rgba(63, 20, 20, 0.541);
+}
+
+.square:nth-child(3) {
+    background: rgba(151, 197, 151, 0.363);
+}
+
+.square:nth-child(4) {
+    background: rgba(134, 98, 31, 0.438);
+}
+.square:nth-child(6) {
+    background: rgba(97, 116, 86, 0.418);
+}
+
+.square:nth-child(7) {
+    background: rgba(115, 115, 170, 0.363);
+}
+
+.square:nth-child(8) {
+    background: rgba(196, 98, 98, 0.363);
+}
+
+.square:nth-child(9) {
+    background: rgba(31, 51, 31, 0.438);
+}
+
+.square:nth-child(10) {
+    background: rgba(68, 51, 20, 0.377);
+}
+.square:nth-child(11) {
+    background: rgba(85, 143, 51, 0.514);
+}
+
+
+ main:hover .even{
+    animation-name: even;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+main:hover .odd{
+    animation-name: odd;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes odd {
+    from {transform: scale(1) translateX(0) rotate(0deg);
+    }
+    to {transform: scale(2) translateX(50px) rotate(360deg);
+        
+    }
+}
+
+@keyframes even {
+    from {transform: scale(1) translateX(0) rotate(0deg);
+    }
+    to {transform: scale(.5) translateX(-50px) rotate(-360deg);
+    }
+}
