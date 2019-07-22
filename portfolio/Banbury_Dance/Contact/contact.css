@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  color: #131111;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #131111;
+  background: #684b4b;
+  background-image: url(.././Images/show.jpg);
+  background-position-y: 50%;
+  background-attachment: fixed;
+  text-align: center;
+  background-blend-mode: screen;
+}
+
+img {
+  margin-top: 2rem;
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+  border: #382929 solid 2px;
+}
+
+header {
+  text-align: right;
+  margin-right: 5%;
+  background: transparent;
+  font-size: 1.5em;
+  margin-top: 3.75%;
+  margin-bottom: 10%;
+}
+
+header h1 {
+  font-family: 'Arizonia', cursive;
+  color: #382929;
+  text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+  font-size: 3.5em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header ul li {
+  font-size: 0.85em;
+  list-style: none;
+  margin: 0 1rem 0 1rem;
+}
+
+header ul li a {
+  color: #131111;
+}
+
+header ul li i {
+  font-size: 1.25em;
+}
+
+/*SVG Related CSS below this comment*/
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.st0 {
+  fill: #f7d8d8;
+}
+
+/*SVG Related CSS above this comment*/
+main {
+  width: 99%;
+  height: auto;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CSS concerning the Article links at the bottom of the page begins here*/
+main .sub-title {
+  font-family: 'Arizonia', cursive;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+  font-size: 2.5em;
+  font-weight: 500;
+  background: #382929;
+  width: 10em;
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 13px 11px -12px #3a3d45;
+  box-shadow: 0px 13px 11px -12px #3a3d45;
+  -webkit-animation-name: sub-title;
+          animation-name: sub-title;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes sub-title {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes sub-title {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 3rem;
+  width: 95%;
+  margin: 5% auto 5% auto;
+}
+
+article {
+  text-align: center;
+  background: #f7d8d8;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+  -webkit-box-shadow: 0px 13px 11px -12px #3a3d45;
+  box-shadow: 0px 13px 11px -12px #3a3d45;
+}
+
+article #article_1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  height: auto;
+}
+
+article #article_2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  height: auto;
+}
+
+article #article_3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  height: auto;
+}
+
+article .color-bar-small {
+  height: 5px;
+  width: 95%;
+  margin: 0 auto 1.5rem auto;
+  background: #382929;
+}
+
+article .paragraph-container {
+  background: #F8F8F8;
+  margin: 1rem auto 1.5rem auto;
+  padding: 0.25rem;
+  width: 90%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 13px 11px -12px #3a3d45;
+  box-shadow: 0px 13px 11px -12px #3a3d45;
+}
+
+article p {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  color: #382929;
+}
+
+.color-bar {
+  height: 30px;
+  width: 100%;
+  background: #382929;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #382929;
+  text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+}
+
+/* CSS concerning the Article links at the bottom of the page ends here*/
+/*Media Queries Start Here*/
+/*Tablet View-Media Query*/
+@media only screen and (max-width: 920px) {
+  header {
+    text-align: right;
+    margin-right: 5%;
+    background: transparent;
+    font-size: 1.5em;
+    margin-top: 3.75%;
+    margin-bottom: 15%;
+  }
+  header h1 {
+    font-family: 'Arizonia', cursive;
+    color: #382929;
+    text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+    font-size: 2.25em;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  header ul li {
+    font-size: 0.57em;
+    list-style: none;
+    margin: 0 1rem 0 1rem;
+  }
+  header ul li a {
+    color: #131111;
+  }
+  header ul li i {
+    font-size: 1.25em;
+  }
+  /* CSS concerning the Article links at the bottom of the page begins here*/
+  .main-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-column-gap: 1em;
+    width: 95%;
+    margin: 5% auto 5% auto;
+  }
+  article {
+    text-align: center;
+    background: #f7d8d8;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 auto 3rem auto;
+    -webkit-box-shadow: 0px 13px 11px -12px #3a3d45;
+    box-shadow: 0px 13px 11px -12px #3a3d45;
+  }
+  article #article_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    height: auto;
+  }
+  article #article_2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    height: auto;
+  }
+  article #article_3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    height: auto;
+  }
+  article p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem 0 1rem;
+    color: #382929;
+  }
+}
+
+/*Mobile Phone View-Media Query*/
+@media only screen and (max-width: 650px) {
+  /*SVG Related CSS below this comment*/
+  svg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    max-height: 600px;
+  }
+  .st0 {
+    fill: #f7d8d8;
+  }
+  /*SVG Related CSS above this comment*/
+  header {
+    text-align: center;
+    margin-right: 0%;
+    background: transparent;
+    font-size: 1em;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    background: #f7d8d8;
+    text-align: center;
+    width: 100%;
+  }
+  header h1 {
+    font-family: 'Arizonia', cursive;
+    color: #382929;
+    text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+    font-size: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #382929;
+  }
+  header ul li {
+    font-size: 0.7em;
+    list-style: none;
+    margin: 0rem 1rem 0 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  header ul li a:hover {
+    color: #f7d8d8;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  header ul li a {
+    color: white;
+    text-shadow: 0px 1px 1px rgba(106, 117, 145, 0.63);
+    text-align: center;
+  }
+  header ul li i {
+    font-size: 1.25em;
+  }
+  /* CSS concerning the Article links at the bottom of the page begins here*/
+  .main-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-column-gap: 1em;
+    width: 95%;
+    margin: 5% auto 5% auto;
+  }
+  article {
+    text-align: center;
+    background: #f7d8d8;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 10% auto 10% auto;
+    -webkit-box-shadow: 0px 13px 11px -12px #3a3d45;
+    box-shadow: 0px 13px 11px -12px #3a3d45;
+  }
+  article #article_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    height: auto;
+  }
+  article #article_2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    height: auto;
+  }
+  article #article_2 #article_3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    height: auto;
+  }
+  article #article_2 p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem 0 1rem;
+    color: #382929;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

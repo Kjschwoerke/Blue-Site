@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: blue;
+    --paragraph-text-color: rgb(2, 2, 24);
+    --svg-color: rgb(104, 142, 212);
+    --paragraph-background: rgb(210, 241, 255);
+  }
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color:var(--paragraph-text-color);
+    background: var(--background-color);
+    background-image:url(./Images/show.jpg);
+    background-position-y: 50%;
+    background-attachment: fixed;
+    text-align: center;
+    background-blend-mode: screen;
+    
+}
+
+img {
+    margin-top: 2em;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    -moz-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+}
+
+#tap {
+    width: 375px;
+}
+
+#jazz {
+    width: 230px;
+}
+
+header {
+    text-align: right;
+    margin-right: 5%;
+    background: transparent;
+    font-size: 1.5em;
+    margin-top: 3.75%;
+    margin-bottom: 15%;
+    
+        h1 {
+            font-family: 'Arizonia', cursive;
+            color: var(--paragraph-text-color);
+            text-shadow: 0px 1px 1px rgba(106,117,145,0.63);
+            font-size: 3.5em;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: center;
+           
+           
+
+                li {
+                    font-size: 0.85em;
+                    list-style: none;
+                    margin: 0 1rem 0 1rem;
+                    
+                        a {
+                            color: #131111;
+                           
+                        }
+                        
+                        i {
+                            font-size: 1.25em;
+                        
+                        }
+                }
+        }
+}
+
+/*SVG Related CSS below this comment*/
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+
+.st0 {
+    fill:var(--svg-color);
+}
+    
+
+/*SVG Related CSS above this comment*/
+
+main {
+    width: 99%;
+    height: auto;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+
+    // border: black dotted 1px;
+}
+
+/* CSS concerning the Article links at the bottom of the page begins here*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    width: 95%;
+    margin: 5% auto 5% auto;
+}
+
+article {
+    text-align: center;
+    background: var(--paragraph-background);
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 auto 0 auto;
+    -webkit-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    -moz-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+
+   
+
+    #article_1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #article_2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #article_3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem 0 1rem;
+        color: var(--paragraph-text-color);
+    }
+}
+
+.color-bar {
+    height: 30px;
+    width: 100%;
+    background: var(--background-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 0px 1px 1px rgba(106,117,145,0.63);
+}
+
+/* CSS concerning the Article links at the bottom of the page ends here*/
+
+/*Media Queries Start Here*/
+    /*Tablet View-Media Query*/
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        text-align: right;
+        margin-right: 5%;
+        background: transparent;
+        font-size: 1.5em;
+        margin-top: 3.75%;
+        margin-bottom: 15%;
+        
+            h1 {
+                font-family: 'Arizonia', cursive;
+                color: var(--paragraph-text-color);
+                text-shadow: 0px 1px 1px rgba(106,117,145,0.63);
+                font-size: 2.25em;
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: center;
+               
+               
+    
+                    li {
+                        font-size: 0.57em;
+                        list-style: none;
+                        margin: 0 1rem 0 1rem;
+                        
+                            a {
+                                color: var(--paragraph-text-color);
+                               
+                            }
+                            
+                            i {
+                                font-size: 1.25em;
+                            
+                            }
+                    }
+            }
+    }
+
+/* CSS concerning the Article links at the bottom of the page begins here*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    width: 95%;
+    margin: 25% auto 0 auto;
+}
+
+article {
+    text-align: center;
+    background: var(--background-color);
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0 auto 3rem auto;
+    -webkit-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    -moz-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+
+   
+
+    #article_1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #article_2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #article_3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem 0 1rem;
+        color: var(--paragraph-text-color);
+    }
+}
+}
+
+
+   /*Mobile Phone View-Media Query*/
+
+   @media only screen and (max-width: 650px) {
+
+    /*SVG Related CSS below this comment*/
+
+svg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+
+.st0 {
+    fill: var(--svg-color);
+}
+    
+
+/*SVG Related CSS above this comment*/
+
+    header {
+        text-align: center;
+        margin-right: 0%;
+        background: transparent;
+        font-size: 1em;
+        margin-top: 0%;
+        margin-bottom: 15%;
+        background: var(--background-color);
+        text-align: center;
+        width: 100%;
+        
+            h1 {
+                font-family: 'Arizonia', cursive;
+                color: var(--paragraph-text-color);
+                text-shadow: 0px 1px 1px rgba(106,117,145,0.63);
+                font-size: 2.5em;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: space-between;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0rem;
+                margin-left: auto;
+                margin-right: auto;
+                background: var(--background-color);
+               
+               
+    
+                    li {
+                        font-size: 0.7em;
+                        list-style: none;
+                        margin: 0rem 1rem 0 1rem;
+                        text-align: center;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        
+                            a {
+                                color: white;
+                                text-shadow: 0px 1px 1px rgba(106,117,145,0.63);
+                                text-align: center;
+                               
+                            }
+                            
+                            i {
+                                font-size: 1.25em;
+                            
+                            }
+                    }
+            }
+    }
+
+/* CSS concerning the Article links at the bottom of the page begins here*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    width: 95%;
+    margin: 10% auto 0 auto;
+}
+
+article {
+    text-align: center;
+    background: var(--background-color);
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 10% auto 3rem auto;
+    -webkit-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    -moz-box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+    box-shadow: 0px 13px 11px -12px rgba(58,61,69,1);
+
+   
+
+    #article_1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #article_2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #article_3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem 0 1rem;
+        color: var(--paragraph-text-color);
+    }
+}
+}

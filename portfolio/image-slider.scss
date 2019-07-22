@@ -171,13 +171,13 @@ img:hover {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 10rem;
 
     .items {
         display: flex;
         align-items: center;
         width: fit-content;
-        animation: carouselAnim 60s infinite alternate linear;
+        animation: carouselAnim 60s infinite alternate linear;     
 
         .entry {
             display: flex;
@@ -244,7 +244,7 @@ img:hover {
 }
 
 .resume-bottom-bar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: auto;
     width: 100%;

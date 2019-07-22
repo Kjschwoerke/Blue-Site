@@ -179,7 +179,7 @@ img:hover {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .container .items {
@@ -281,7 +281,7 @@ img:hover {
 }
 
 .resume-bottom-bar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: auto;
   width: 100%;

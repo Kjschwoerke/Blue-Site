@@ -74,6 +74,7 @@ svg {
     display: grid;
     height: 100%;
     width: 80%;
+    max-width: 800px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; 
 }
@@ -146,7 +147,9 @@ body nav ul a li {
     color: #758488;
 }
 
+
 .contact-me {
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -157,13 +160,14 @@ body nav ul a li {
 
 .contact-header {
     border-bottom: #5b9691 solid 3px;
+    background: #58abb183;
 }
 .contact-me .contact {
     text-align: center;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #172529;
-    background: #58abb183;
+    background: transparent;
     padding: 1rem;
     font-weight: 700;
     letter-spacing: .25rem;
@@ -259,4 +263,22 @@ form {
     height: auto;
     width: 100%;
     background: #a6d0d4;
+}
+
+@keyframes header {
+    from {transform:scale(1);
+   }
+   
+   to {transform:scale(1.055)     translateY(-0.5rem);
+       
+    text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
+   } 
+}
+
+.contact {
+   animation-name: header;
+   animation-duration: 0.5s; 
+   animation-iteration-count: 2;
+   animation-direction: alternate;
+   animation-delay: 0.0s;
 }

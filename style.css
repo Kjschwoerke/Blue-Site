@@ -204,7 +204,7 @@ header .name-container{
    
    to {transform:scale(1.055)     translateY(-0.5rem);
        
-       text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
+    text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
    } 
 }
 
@@ -215,3 +215,23 @@ header {
    animation-direction: alternate;
    animation-delay: 0.0s;
 }
+
+/* @keyframes linkfade {
+    0% {opacity: 1;}
+
+    25% {opacity: 0;}
+
+    50% {opacity: 1;}
+
+    75% {opacity: 0;}
+
+    100% {opacity: 1;}
+
+}
+
+*>a , ul , footer {
+    animation-name: linkfade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;  
+}  */

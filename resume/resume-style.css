@@ -158,13 +158,14 @@ body nav ul a li {
 
 .resume-header {
     border-bottom: #5b9691 solid 3px;
+    background: #58abb183
 }
 .resume-me .resume {
     text-align: center;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #172529;
-    background: #58abb183;
+    background: transparent;
     padding: 1rem;
     font-weight: 700;
     letter-spacing: .25rem;
@@ -308,4 +309,23 @@ body nav ul a li {
     font-size: 1rem;
     font-weight: 500;
     font-style: italic;
+}
+
+
+@keyframes header {
+    from {transform:scale(1);
+   }
+   
+   to {transform:scale(1.055)     translateY(-0.5rem);
+       
+    text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
+   } 
+}
+
+.resume {
+   animation-name: header;
+   animation-duration: 0.5s; 
+   animation-iteration-count: 2;
+   animation-direction: alternate;
+   animation-delay: 0.0s;
 }
