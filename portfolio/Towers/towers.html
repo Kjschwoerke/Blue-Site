@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./towers.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Towers of Hanoi</title>
+</head>
+<body>
+    <main>
+
+        <div class="grid_container">
+            <header><h1>Towers of Hanoi</h1></header>
+            <nav>
+
+                <h2 id=large>Large Block Control</h2>
+                <h2 id=medium>Medium Block Control</h2>
+                <h2 id=small>Small Block Control</h2>
+
+                <ul class='movement buttons' id='large_buttons'>
+
+                    <!-- buttons to move large block -->
+                    <li><button class='large_button'  id='large_one'>Tower One</button></li>
+                    <li><button class='large_button' id='large_two'>Tower Two</button></li>
+                    <li><button class='large_button' id='large_three'>Tower Three</button></li>
+                </ul>
+
+                <ul class='movement buttons' id='medium_buttons'>   
+                    <!--buttons to move medium block-->
+                    <li><button class='medium_button' id='med_one'>Tower One</button></li>
+                    <li><button class='medium_button' id='med_two'>Tower Two</button></li>
+                    <li><button class='medium_button' id='med_three'>Tower Three</button></li>
+                </ul>
+
+                <ul class='movement buttons' id='small_buttons'>
+                    <!--buttons to move small block-->
+                    <li><button class='small_button' id='sm_one'>Tower One</button></li>
+                    <li><button class='small_button' id='sm_two'>Tower Two</button></li>
+                    <li><button class='small_button' id='sm_three'>Tower Three</button></li>
+
+                </ul>
+
+            </nav>
+
+            <!--Create the tower elements-->
+        <div class="tower-container">
+            <span>Tower One</span> 
+            <div class="tower" id='tower_one'> <!--Create the block elements-->
+                <div class="block" id='block_large'></div>
+                <div class="block" id='block_medium'></div>
+                <div class="block" id='block_small'></div></div>
+            <span>Tower Two</span> 
+            <div class="tower" id='tower_two'></div>
+            <span>Tower Three</span> 
+            <div class="tower" id='tower_three'></div>
+
+
+           
+        </div>
+
+            <div class="rules">
+                <h3>How To Play The Game</h3>
+                <p>
+                        Tower of Hanoi consists of three columns or "towers" with a nunber of blocks placed one on top of the other inside each "tower".
+                </p>
+                <p>
+                        The objective of the puzzle is to move the stack to another column following these simple rules.
+                </p>
+                <p>        
+                        Only one block can be moved at a time.
+                        No block can be placed on top of a smaller block.
+                        
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./towers.js"></script>
+</body>
+</html>
