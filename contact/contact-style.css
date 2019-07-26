@@ -39,6 +39,7 @@ svg-container {
 svg {
     position: absolute;
     top: 0;
+    z-index: -2;
 }
 
 #Layer_1 {
@@ -64,6 +65,8 @@ svg {
 }
 
 .st1 {
+    position: absolute;
+    z-index: -2;
     fill: #58abb183 !important;
 }
 
