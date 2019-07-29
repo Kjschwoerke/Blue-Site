@@ -109,6 +109,7 @@ nav ul {
     border-top: #5b9691 solid 3px;
     border-bottom: #5b9691 solid 3px;
     align-content: space-between;
+    justify-content: center;
 }
 
 nav ul li{
@@ -123,8 +124,8 @@ nav ul li{
     background-color: transparent;
     text-decoration: none;
     margin-bottom: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
 }
 
 nav ul li:first-child{
@@ -255,7 +256,7 @@ img:hover {
     from {transform:scale(1);
    }
    
-   to {transform:scale(1.055)     translateY(-0.5rem);
+   to {transform:scale(1.0025)     translateY(-0.5rem);
        
     text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
    } 
@@ -280,6 +281,7 @@ h3 {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 350px;
 }
 
 .carousel {

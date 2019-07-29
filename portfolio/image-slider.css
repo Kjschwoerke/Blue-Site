@@ -116,6 +116,9 @@ nav ul {
   border-bottom: #5b9691 solid 3px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul li {
@@ -130,8 +133,6 @@ nav ul li {
   background-color: transparent;
   text-decoration: none;
   margin-bottom: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 nav ul li:first-child {
@@ -294,8 +295,8 @@ img:hover {
             transform: scale(1);
   }
   to {
-    -webkit-transform: scale(1.055) translateY(-0.5rem);
-            transform: scale(1.055) translateY(-0.5rem);
+    -webkit-transform: scale(1.0025) translateY(-0.5rem);
+            transform: scale(1.0025) translateY(-0.5rem);
     text-shadow: 0px 2px 4px rgba(34, 42, 54, 0.46);
   }
 }
@@ -306,8 +307,8 @@ img:hover {
             transform: scale(1);
   }
   to {
-    -webkit-transform: scale(1.055) translateY(-0.5rem);
-            transform: scale(1.055) translateY(-0.5rem);
+    -webkit-transform: scale(1.0025) translateY(-0.5rem);
+            transform: scale(1.0025) translateY(-0.5rem);
     text-shadow: 0px 2px 4px rgba(34, 42, 54, 0.46);
   }
 }
@@ -334,6 +335,7 @@ h3 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  min-width: 350px;
 }
 
 .carousel {

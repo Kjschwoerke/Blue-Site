@@ -112,7 +112,8 @@ nav ul {
     text-decoration: none;
     border-top: #5b9691 solid 3px;
     border-bottom: #5b9691 solid 3px;
-    align-content: space-between;
+    align-content: space-around;
+    justify-content: center;
 }
 
 nav ul li{
@@ -127,8 +128,9 @@ nav ul li{
     background-color: transparent;
     text-decoration: none;
     margin-bottom: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
+
 }
 
 nav ul li:first-child{
@@ -159,6 +161,9 @@ body nav ul a li {
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 2%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
    }
 
 .contact-header {
@@ -207,6 +212,7 @@ form {
 
 .form-container form label {
     margin-bottom: .25rem;
+
 }
 
 .form-container form input {

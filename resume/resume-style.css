@@ -6,6 +6,10 @@
     text-decoration: none;
     color: #172529;
 }
+html{
+    height: 100%;
+    width: 100%;
+}
 
 * a {
     text-decoration: none;
@@ -111,6 +115,7 @@ nav ul {
     border-top: #5b9691 solid 3px;
     border-bottom: #5b9691 solid 3px;
     align-content: space-between;
+    justify-content: center;
 }
 
 nav ul li{
@@ -125,8 +130,9 @@ nav ul li{
     background-color: transparent;
     text-decoration: none;
     margin-bottom: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
+    
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 
 nav ul li:first-child{
