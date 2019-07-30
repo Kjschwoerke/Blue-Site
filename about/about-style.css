@@ -111,6 +111,7 @@ nav ul li{
     background-color: transparent;
     text-decoration: none;
     margin-bottom: 0.75rem;
+    
     /* margin-right: auto;
     margin-left: auto; */
 }
@@ -231,4 +232,44 @@ header .about {
    animation-iteration-count: 2;
    animation-direction: alternate;
    animation-delay: 0.0s;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* .navbar {
+        display: flex;
+    }
+    
+    .desktop-nav {
+        display: none;
+    } */
+    
+    .svg {
+        display: none;
+    }
+    
+    .st1 {
+        display: none;
+    }
+    
+    .st0 {
+        display: none;
+    }
+    
+    .grid-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        flex-direction: column;
+        height: 100%;
+        width: 95%;
+}
+.portrait-image {
+    margin-top: 0.5rem;
+}
 }
