@@ -7,20 +7,6 @@
     color: #172529;
 }
 
-* a {
-    text-decoration: none;
-    font-style: bold;
-    color: #758488;
-}
-
-// * a:hover {
-//     transition-duration: 0.20s;
-//     transform: scale(1.15) translateY(-2px);
-//     text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
-//     text-decoration: none;
-//     color: #172529;
-// }
-
 #current-page {
     color: #172529;
 }
@@ -130,6 +116,10 @@ nav ul li{
 
 nav ul li:first-child{
     margin-right: 10%;
+}
+
+body nav ul a:hover {
+    text-decoration: none;
 }
 
 

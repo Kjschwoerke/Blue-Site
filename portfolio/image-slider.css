@@ -8,12 +8,6 @@
   color: #172529;
 }
 
-* a {
-  text-decoration: none;
-  font-style: bold;
-  color: #758488;
-}
-
 #current-page {
   color: #172529;
 }
@@ -137,6 +131,10 @@ nav ul li {
 
 nav ul li:first-child {
   margin-right: 10%;
+}
+
+body nav ul a:hover {
+  text-decoration: none;
 }
 
 body nav ul a li:hover {
