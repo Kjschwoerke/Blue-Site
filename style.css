@@ -79,7 +79,7 @@ body nav ul a li:hover {
 body nav ul a li {
     text-decoration: none;
     font-style: bold;
-    color: #758488;
+    color: #667579;
 }
 
 
@@ -119,7 +119,7 @@ header .name-container{
     font-style: italic;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    color: #758488;
+    color: #667579;
     background-color: transparent;
     text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
 }
@@ -183,7 +183,7 @@ header .name-container{
 }
 
 .footer-icons a i {
-    color: #758488;
+    color: #667579;
 }
 
 .footer-icons a i:hover {

@@ -14,7 +14,7 @@ html{
 * a {
     text-decoration: none;
     font-style: bold;
-    color: #758488;
+    color: #333b3d;
 }
 
 * a:hover {
@@ -152,7 +152,7 @@ body nav ul a li:hover {
 body nav ul a li {
     text-decoration: none;
     font-style: bold;
-    color: #758488;
+    color: #667579;
 }
 
 .resume-me {
@@ -255,7 +255,7 @@ body nav ul a li {
 }
 
 .footer-icons a i {
-    color: #758488;
+    color: #667579;
     margin: 0 2rem 0 2rem;
     padding: 1rem;
 }
@@ -316,7 +316,7 @@ body nav ul a li {
 
 .paragraph-container .Education p:nth-child(2) {
     font-size: 1rem;
-    color: #5b9691;
+    color: #2d4442;
 }
 
 .paragraph-container .Education p:nth-child(3) {

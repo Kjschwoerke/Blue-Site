@@ -150,7 +150,7 @@ body nav ul a li:hover {
 body nav ul a li {
   text-decoration: none;
   font-style: bold;
-  color: #758488;
+  color: #667579;
 }
 
 .portfolio-page {
@@ -263,7 +263,7 @@ img:hover {
 }
 
 .footer-icons a i {
-  color: #758488;
+  color: #667579;
   margin: 0 2rem 0 2rem;
   padding: 1rem;
 }

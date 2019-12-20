@@ -10,7 +10,7 @@
 * a {
     text-decoration: none;
     font-style: bold;
-    color: #758488;
+    color: #667579;
 }
 
 * a:hover {
@@ -160,7 +160,7 @@ body nav ul a li:hover {
 body nav ul a li {
     text-decoration: none;
     font-style: bold;
-    color: #758488;
+    color: #667579;
 }
 
 
@@ -276,7 +276,7 @@ form {
 }
 
 .footer-icons a i {
-    color: #758488;
+    color: #667579;
     margin: 0 2rem 0 2rem;
     padding: 1rem;
 }
