@@ -326,7 +326,7 @@ body nav ul a li {
 }
 
 
-@keyframes header {
+/* @keyframes header {
     from {transform:scale(1);
    }
    
@@ -342,7 +342,7 @@ body nav ul a li {
    animation-iteration-count: 2;
    animation-direction: alternate;
    animation-delay: 0.0s;
-}
+} */
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {

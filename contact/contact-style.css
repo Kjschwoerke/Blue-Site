@@ -303,7 +303,7 @@ textarea {
     background: #a6d0d4;
 }
 
-@keyframes header {
+/* @keyframes header {
     from {transform:scale(1);
    }
    
@@ -319,7 +319,7 @@ textarea {
    animation-iteration-count: 2;
    animation-direction: alternate;
    animation-delay: 0.0s;
-}
+} */
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {

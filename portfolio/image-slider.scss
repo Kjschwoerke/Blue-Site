@@ -251,15 +251,15 @@ img {
     background: #a6d0d4;
 }
 
-@keyframes header {
-    from {transform:scale(1);
-   }
+// @keyframes header {
+//     from {transform:scale(1);
+//    }
    
-   to {transform:scale(1.0025)     translateY(-0.5rem);
+//    to {transform:scale(1.0025)     translateY(-0.5rem);
        
-    text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
-   } 
-}
+//     text-shadow: 0px 2px 4px rgba(34,42,54,0.46);; 
+//    } 
+// }
 
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -267,11 +267,11 @@ h3 {
     text-align: center;
     width: 50%;
     margin: 3rem auto 0 auto;
-    animation-name: header;
-    animation-duration: 0.5s; 
-    animation-iteration-count: 2;
-    animation-direction: alternate;
-    animation-delay: 0.0s;
+    // animation-name: header;
+    // animation-duration: 0.5s; 
+    // animation-iteration-count: 2;
+    // animation-direction: alternate;
+    // animation-delay: 0.0s;
 }
 
 // Bootstrap Carousel
