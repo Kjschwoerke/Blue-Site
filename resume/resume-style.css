@@ -326,10 +326,16 @@ body nav ul a li {
 
 .Education {
     width: 95%;
-    border-bottom: #5b9691 solid 3px;
-    border-top: #5b9691 solid 3px;
-   
+    padding: 1em;
+    background: #f8f8f8;
+    /* border-radius: 10px; */
 }
+
+.Education h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .paragraph-container {
     display: flex;
     flex-direction: column;
@@ -365,17 +371,28 @@ body nav ul a li {
     font-style: italic;
 }
 
+.jobDescription {
+    text-align: left;
+    background: #f8f8f8;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.jobDescription h4 {
+    text-align: center;
+}
+
+.jobDescription li {
+    margin-bottom: 1em;
+}
+
+.jobDescription li {
+    margin-bottom: 1em;
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-    /* .navbar {
-        display: flex;
-    }
-    
-    .desktop-nav {
-        display: none;
-    } */
-    
     .svg {
         display: none;
     }
@@ -461,6 +478,18 @@ body nav ul a li {
         width: 95%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .Education h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .Education h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     .work_card {
