@@ -276,14 +276,26 @@ body nav ul a li {
 }
 
 .footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
     font-size: 2rem;
     border-top: #5b9691 solid 3px;
     padding: .5rem .75rem .5rem .75rem;
 }
 
+.footer-icons .footer-icon-div {
+    display: flex;
+    font-size: .75rem;
+    flex-direction: column;
+    text-align: center;
+}
+
 .footer-icons a i {
     color: #667579;
+    font-size: 2rem;
     margin: 0 2rem 0 2rem;
     padding: 1rem;
 }
