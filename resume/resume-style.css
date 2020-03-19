@@ -336,6 +336,10 @@ body nav ul a li {
     font-weight: 600;
 }
 
+#lastEducation {
+    margin-bottom: 1em;
+}
+
 .paragraph-container {
     display: flex;
     flex-direction: column;
