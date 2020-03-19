@@ -1,0 +1,11 @@
+button:focus {
+    border: orange dotted 4px;
+}
+
+a:focus {
+    border: orange dotted 4px;
+} 
+
+#submitButton:focus {
+    border: orange dotted 4px;  
+}

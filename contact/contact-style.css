@@ -285,7 +285,7 @@ textarea {
 #submitButton {
     background-color: #667579;
   }
-  
+
 #submitButton:before {
     content: "";
     position: absolute;
