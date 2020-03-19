@@ -336,13 +336,6 @@ a.carousel-control-prev {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-  /* .navbar {
-        display: flex;
-    }
-    
-    .desktop-nav {
-        display: none;
-    } */
   .svg {
     display: none;
   }
@@ -467,6 +460,18 @@ a.carousel-control-prev {
   .portrait-image {
     margin-top: 0.5rem;
     display: none;
+  }
+  #lastEducation {
+    margin-bottom: 1em;
+  }
+  .d-none {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=image-slider.css.map */
