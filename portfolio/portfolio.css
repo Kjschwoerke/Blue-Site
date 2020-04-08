@@ -6,6 +6,68 @@
     text-decoration: none;
     color: #172529;
 }
+html{
+    height: 100%;
+    width: 100%;
+}
+
+* a {
+    text-decoration: none;
+    font-style: bold;
+    color: #333b3d;
+}
+
+* a:hover {
+    transition-duration: 0.20s;
+    transform: scale(1.15) translateY(-2px);
+    text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
+    text-decoration: none;
+    color: #172529;
+}
+
+button {
+    color:#333b3d;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 0.5em;
+    position: relative;
+    overflow:hidden;
+    background: none;
+    z-index: 1; 
+    cursor: pointer;
+    transition:         0.025s ease-in;
+    -o-transition:      0.025s ease-in;
+    -ms-transition:     0.025s ease-in;
+    -moz-transition:    0.025s ease-in;
+    -webkit-transition: 0.025s ease-in;
+    
+  }
+  
+button {
+    background-color: #f8f8f8;
+  }
+  
+button:before {
+    content: "";
+    position: absolute;
+    background: #58abb183;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top .15s ease-in;
+    transition: top .15s ease-in;
+}
+  
+button:hover:before {
+    top: 0;
+  }
 
 #current-page {
     color: #172529;
@@ -25,6 +87,7 @@ svg-container {
 svg {
     position: absolute;
     top: 0;
+    z-index: -2;
 }
 
 #Layer_1 {
@@ -60,10 +123,11 @@ svg {
     display: grid;
     height: 100%;
     width: 80%;
+    max-width: 900px;
+    min-width: 200px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto; 
+    grid-template-rows: 1fr; 
 }
-
 
 nav {
     display: flex;
@@ -72,7 +136,6 @@ nav {
     margin-right: auto;
     text-align: center;
     text-decoration: none;
-    
 }
 
 nav ul {
@@ -107,10 +170,6 @@ nav ul li:first-child{
     margin-right: 10%;
 }
 
-body nav ul a:hover {
-    text-decoration: none;
-}
-
 
 body nav ul a li:hover {
     transition-duration: 0.20s;
@@ -126,72 +185,55 @@ body nav ul a li {
     color: #667579;
 }
 
-//Portfolio Section CSS
+/* Portfolio main CSS */
 
-h1 {
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    padding: 1em;
-    color: #172529;
-    font-weight: 700;
-    letter-spacing: .25rem;
-    text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
-    margin: 0 auto 2em;
-    text-align: center;
-    border-bottom: #5b9691 solid 3px;
-    background: #58abb183;
-}
-
-section {
+.portfolio-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 95%;
-    margin: 1em auto;
-    background: transparent;
-    border-bottom: #5b9691 solid 3px;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 300px;
     height: auto;
-    width: 25%;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 2em;
-    padding: 1em;
-    background: #58abb183;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    min-height: 400px;
     text-align: center;
+    padding: 0em;
+    margin: 2em 1.5em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background: #043c423a;
 }
+
+.portfolio-item h2 {
+    width: 100%;
+    margin: 0 auto 1em;
+    background:  #58abb183;
+    border-top: solid 3px #5b9691;
+    border-bottom: solid 3px #5b9691;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.portfolio-item p {
+    width: 80%;
+    margin: 0 auto 1em;
+}
+
 .portfolio-item a {
-    height: auto;
-    width: auto;
+    font-style: italic;
 }
 
 .port-image {
-    width: 200px;
-    height: auto;
-    margin: 1em auto;
-}
-
-@media only screen and (max-width: 600px) {
-    .svg {
-        display: none;
-    }
-    
-    .st1 {
-        display: none;
-    }
-    
-    .st0 {
-        display: none;
-    }
+    height: 200px;
+    width: auto;
+    margin: 1em .25em;
+    border-radius: 5px
 }
