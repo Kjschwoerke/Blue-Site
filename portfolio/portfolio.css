@@ -237,3 +237,26 @@ body nav ul a li {
     margin: 1em .25em;
     border-radius: 5px
 }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+         .navbar {
+            display: flex;
+        }
+        
+        .desktop-nav {
+            display: none;
+        } 
+        
+        .svg {
+            display: none;
+        }
+        
+        .st1 {
+            display: none;
+        }
+        
+        .st0 {
+            display: none;
+        }
+}
