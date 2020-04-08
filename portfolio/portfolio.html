@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico.ico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="./portfolio-style.css"> -->
@@ -45,64 +44,46 @@
                     </nav>
 
         </div>
-
-        <div class="bd-example">
-            <h3>Please select a slide below to view the page in full</h3>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"
-            > 
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
-
-              <!-- Tic Tac Toe Game Slide and Link-->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="./ticTacToe-javaScript/ticTacToe.html" target ="_blank"> Click to play "Tic-Tac-Toe" <img src="../images/TicTacToe.jpg" class="d-block w-100" alt="Link to Tic Tac Toe Game"></a>
-                  <div class="carousel-caption d-md-block">
-                    <h5>Tick-Tac-Toe Game</h5>
-                    <p>Simple Tic-Tac-Toe Game created using HTML CSS and Java Script</p>
-                  </div>
-                </div>
-
-                <!-- Click Game Slide and Link-->
-                <div class="carousel-item">
-                   <a href="./Clicker Game/index.html" target="_blank"> Click to play the 'Clicker Game' <img src="../images/Click_Game.jpg" class="d-block w-100" alt="Link to Clicker Game"></a>
-                  <div class="carousel-caption d-md-block">
-                    <h5>Clicker Game</h5>
-                    <p>Simple Clicker Game created using HTML CSS and Java Script</p>
-                  </div>
-                </div>
-
-                <!--Art Frog Site-->
-                <div class="carousel-item">
-                  <a href="http://artfrog.org/" target="_blank"> Click for ArtFrog's Website <img src="../images/ArtFrog.jpg" class="d-block w-100" alt="Link to Art Frog Website"></a>
-                  <div class="carousel-caption d-md-block">
-                    <h5>ArtFrog Art Academy</h5>
-                    <p>Live website created as part of a three person team for the ArtFrog Art Academy</p>
-                  </div>
-                </div>
-
-                <!--Closing Div for image sliders-->  
-              </div>
-
-              <!--Carousel Controls for changing slides left or right-->
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+        
+        <main class ="portfolio-container">
+          <!-- <h1>Portfolio</h1> -->
+          <!--Art Frog Site-->
+          <div class="portfolio-item">
+            <h2>ArtFrog Art Academy</h2>
+            <a href="http://artfrog.org/" target="_blank"> Click for ArtFrog's Website <img src="../images/ArtFrog.jpg" class="d-block w-100" alt="Link to Art Frog Website"></a>
+            <div class="portfolio-caption">
+              <p>2nd Place Winner of the 2019 AIR Accessibility Internet Rally hosted by Knowability in Austin, TX. Live website created as part of a three person development team for the ArtFrog Art Academy</p>
             </div>
           </div>
 
-        <!--Boot Strap 4 javaScript links-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
+          <!--New Critter Site-->
+          <div class="portfolio-item">
+            <h2>New Critter Studios</h2>
+            <a href="https://agile-citadel-77839.herokuapp.com/" target="_blank"> Click for New Critter Studios' Website <img src="../images/new-critter-site.jpg" class="d-block w-100" alt="Link to Art Frog Website"></a>
+            <div class="portfolio-caption">
+              <p>Full Stack Site Created for New Critter Studios as a 'full-stack' demonstration using HTML, CSS, React, and MongoDB.</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item">
+            <h2>Tick-Tac-Toe Game</h2>
+            <a href="./ticTacToe-javaScript/ticTacToe.html" target ="_blank"> Click to play "Tic-Tac-Toe" <img src="../images/TicTacToe.jpg" class="d-block w-100" alt="Link to Tic Tac Toe Game"></a>
+            <div class="portfolio-caption">
+              
+              <p>Simple Tic-Tac-Toe Game created using HTML CSS and Java Script</p>
+            </div>
+          </div>
+
+          <!-- Click Game Slide and Link-->
+          <div class="portfolio-item">
+            <h2>Clicker Game</h2>
+             <a href="./Clicker Game/index.html" target="_blank"> Click to play the 'Clicker Game' <img src="../images/Click_Game.jpg" class="d-block w-100" alt="Link to Clicker Game"></a>
+            <div class="portfolio-caption"> 
+              <p>Simple Clicker Game created using HTML CSS and Java Script</p>
+            </div>
+          </div>
+
+          
+        </main>
         </body>
         </html>
