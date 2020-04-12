@@ -11,13 +11,13 @@ html{
     width: 100%;
 }
 
-* a {
+.navLink {
     text-decoration: none;
     font-style: bold;
     color: #333b3d;
 }
 
-* a:hover {
+* .navLink:hover {
     transition-duration: 0.20s;
     transform: scale(1.15) translateY(-2px);
     text-shadow: 0px 1px 2px rgba(34,42,54,0.46);
